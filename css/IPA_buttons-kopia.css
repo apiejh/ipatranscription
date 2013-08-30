@@ -12,20 +12,29 @@ hr {
     width: 100%;
 }
 
+#check {
+	clear: both;
+}
+
 .answer #backspace {
     float: left;
 }
 
+.prompt {
+    font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
+    font-size: 130%;
+}
+
 .answer input[type="text"] {
     font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
-    font-size: 1.5em;
-    line-height: 2.5em;
-    float: left;
+    font-size: 130%;
+    line-height: 240%;
+    float: left
 }
 
 .ipa-buttons {
     border: 1px solid;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
     text-align: center;
     background: none repeat scroll 0 0 #F3F3F3;
     border-color: #CCCCCC;
@@ -91,8 +100,8 @@ hr {
 
 .consonants {
 	display: inline-block;
-	border-right: 3px double #CCCCCC;
 	margin-right: 15px;
+	margin-bottom: 5px;
 }
 
 .vowels {
