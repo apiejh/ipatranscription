@@ -1,0 +1,161 @@
+button {
+	position: relative;
+}
+
+hr {
+	color: #CCC;
+	background-color: #CCC;
+	border: 1px solid #CCC;
+}
+
+input[id^="id_answer_"] {
+    font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
+    font-size: 1.5em;
+    line-height: 2.5em;
+    width: 100%;
+}
+
+.answer input[type="text"] {
+    font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
+    font-size: 1.5em;
+    line-height: 2.5em;
+    width: 100%;
+}
+
+.ipa-buttons {
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-color: #CCCCCC;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.hover {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+}
+
+.group {
+    display: inline;
+    padding: 5px 5px;
+}
+
+.ipa-buttons .group {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.ipa-buttons button {
+    font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
+    font-size: 16px;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1px;
+    cursor: pointer;
+    line-height: 1em;
+    border: none;
+    background: none
+}
+
+.group button {
+    line-height: 1em;
+    display: inline-block;
+}
+
+.ipa-buttons button:hover {
+    background-color: rgba(160,232,255,0.5);
+}
+
+.group button:hover {
+    background-color: rgba(160,232,255,0.5);
+}
+
+#lang-switch {
+	float: right;
+	cursor: pointer;
+	margin-right: 7px;
+}
+
+.consonants table {
+	border-collapse: collapse;
+}
+
+.consonants table td {
+	border: 1px solid #CCCCCC;
+}
+
+.consonants {
+	width: 57%;
+	display: inline-block;
+	border-right: 3px double #CCCCCC;
+	margin-right: 15px;
+}
+
+.vowels {
+	width: 30%;
+	display: inline-block;
+}
+
+.diacritics {
+	width: 5%;
+	display: inline-block;
+}
+
+.preview {
+	width: 70px;
+	display: inline-block;
+	float: right;
+}
+
+.symbol {
+	font-size: 2em;
+	padding: 10px 0;
+	border: 1px solid #CCCCCC;
+	background: #EBEBEB;
+	font-family: "Charis SIL", "Doulos SIL", "Times New Roman";
+	box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.description {
+	font-size: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.vowels {
+	background-image: url('../ipa_bg.png');
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 145px;
+	position: relative;
+}
+
+.vowels button{
+	position: absolute;
+}
+
+#sound-switch {
+	float: right;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+button.hidden {
+	display: none;
+}
+
+div.no-see {
+	width: 0px;
+	height: 0px;
+}
