@@ -13,15 +13,14 @@ hr {
 }
 
 .answer #backspace {
-    float: right;
-    height: 100%;
+    float: left;
 }
 
 .answer input[type="text"] {
     font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
     font-size: 1.5em;
     line-height: 2.5em;
-    width: 90%;
+    float: left;
 }
 
 .ipa-buttons {
@@ -91,7 +90,6 @@ hr {
 }
 
 .consonants {
-	width: 57%;
 	display: inline-block;
 	border-right: 3px double #CCCCCC;
 	margin-right: 15px;
@@ -110,7 +108,7 @@ hr {
 .preview {
 	width: 70px;
 	display: inline-block;
-	float: right;
+	float: left;
 }
 
 .symbol {
