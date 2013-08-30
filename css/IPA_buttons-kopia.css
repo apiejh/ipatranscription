@@ -8,18 +8,20 @@ hr {
 	border: 1px solid #CCC;
 }
 
-input[id^="id_answer_"] {
-    font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
-    font-size: 1.5em;
-    line-height: 2.5em;
+.answer {
     width: 100%;
+}
+
+.answer #backspace {
+    float: right;
+    height: 100%;
 }
 
 .answer input[type="text"] {
     font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
     font-size: 1.5em;
     line-height: 2.5em;
-    width: 100%;
+    width: 90%;
 }
 
 .ipa-buttons {
@@ -34,10 +36,9 @@ input[id^="id_answer_"] {
 
 .hover {
     position: fixed;
-    bottom: 20px;
-    left: 50%;
-    width: 800px;
-    margin-left: -400px;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
 }
 
 .group {
@@ -158,4 +159,7 @@ button.hidden {
 div.no-see {
 	width: 0px;
 	height: 0px;
+}
+.clicked {
+	opacity: 0.5;
 }
