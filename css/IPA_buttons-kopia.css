@@ -28,7 +28,7 @@ hr {
 .answer input[type="text"] {
     font-family: "Charis SIL", "Doulos SIL", "Times New Roman"; 
     font-size: 130%;
-    line-height: 240%;
+    line-height: 50px;
     float: left
 }
 
@@ -110,8 +110,14 @@ hr {
 }
 
 .diacritics {
-	width: 5%;
 	display: inline-block;
+}
+
+.diacritics button  {
+	border: 1px solid #CCCCCC;
+	display: block;
+	margin-left: 5px;
+	margin-bottom: 5px;
 }
 
 .preview {
