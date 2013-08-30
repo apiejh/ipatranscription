@@ -46,4 +46,14 @@ $(document).ready(function() {
     	}
     	});
     });
+    $('#backspace').click(function(){
+    	$("#backspace").addClass("clicked");
+    	$(".insertHere").val(
+    	function(index,value){
+        return value.substr(0,value.length-1);
+    	})
+    	setTimeout(function () {
+            $("#backspace").removeClass("clicked");
+        }, 200);
+	})
 });
