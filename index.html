@@ -5,6 +5,7 @@
 </head>
 <body>
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/IPA_buttons.js"></script>
 <script type="text/javascript" src="js/IPAcontrols_buttons.js"></script>
 <script type="text/javascript" src="js/IPAcontrols.js"></script>
@@ -12,9 +13,7 @@
 <link href="css/IPA_buttons-kopia.css" type="text/css" rel="stylesheet" />
 <div class="assets_holder"></div>
 <div class="ipa-buttons hover">
-<div id="sound_element" class="no-see"></div>
 <span id="lang-switch" title="Click here to toggle variety"><a class="rp"><img alt="RP" src="flag-uk.png"/></a><a class="genam hidden"><img alt="GenAm" src="flag-usa.png"/></a></span>
-<span id="sound-switch" title="Click here to toggle sound"><a class="sound_on hidden"><img alt="sound on" src="sound_on.png"/></a><a class="sound_off"><img alt="sound off" src="sound_off.png"/></a></span>
 <div class="float-left consonants">
 <table>
 	<tr>
@@ -155,9 +154,8 @@
   </div>
 
   <div class="answer">
-    <div id="backspace"><img src="delete.png"/></div>
     <input type="text" autocomplete="off" readonly="true" class="insertHere" placeholder="Write your transcription here"/>
-  	
+  	<div id="backspace"><img src="delete.png"/></div>
   </div>
     <div class="feedback">
     </div>
