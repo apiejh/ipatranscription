@@ -5,6 +5,7 @@
 </head>
 <body>
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/IPA_buttons.js"></script>
 <script type="text/javascript" src="js/IPAcontrols_buttons.js"></script>
 <script type="text/javascript" src="js/IPAcontrols.js"></script>
@@ -155,7 +156,9 @@
   </div>
 
   <div class="answer">
-    <input type="text" class="" size="80" placeholder="Write your transcription here"/>
+    <div id="backspace"><img src="delete.png"/></div>
+    <input type="text" autocomplete="off" readonly="true" class="insertHere" placeholder="Write your transcription here"/>
+  	
   </div>
     <div class="feedback">
     </div>
