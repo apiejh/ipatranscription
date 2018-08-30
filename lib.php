@@ -13,17 +13,26 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 /**
- * Transcription question type version information.
+ * Serve question type files
  *
+ * @since      2.0
  * @package    qtype
  * @subpackage transcription
- * @copyright  2015 Grzegorz Aperliński  {gaperlinski@gmail.com}
+ * @copyright  Dongsheng Cai <dongsheng@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'qtype_transcription';
-$plugin->version  = 2015080100;
-$plugin->requires  = 2012062504;
-$plugin->maturity  = MATURITY_BETA;
+
+/**
+ * Checks file access for short answer questions.
+ */
+function qtype_transcription_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload) {
+    global $DB, $CFG;
+    require_once($CFG->libdir . '/questionlib.php');
+    question_pluginfile($course, $context, 'qtype_transcription', $filearea, $args, $forcedownload);
+}

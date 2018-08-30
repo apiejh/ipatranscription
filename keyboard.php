@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/IPA_buttons.js"></script>
-<script type="text/javascript" src="js/IPAcontrols_buttons.js"></script>
-<script type="text/javascript" src="js/IPAcontrols.js"></script>
-<script type="text/javascript" src="js/IPA_buttons_upgrade.js"></script>
-<link href="css/IPA_buttons-kopia.css" type="text/css" rel="stylesheet" />
-<div class="assets_holder"></div>
-<span id="lang-switch" title="Click here to toggle variety"><a class="rp"><img alt="RP" src="flag-uk.png"/></a><a class="genam hidden"><img alt="GenAm" src="flag-usa.png"/></a></span>
+<?php
+$path = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+$link = preg_replace('/keyboard.php/', '', $path );
+?>
+<script type="text/javascript" src="<?php echo $link;?>js/IPA_buttons.js" />
+
 <div class="ipa-buttons hover">
+<div id="lang-switch" title="Click here to toggle variety">
+	<div class="flag rp"></div>
+	<div class="flag genam"></div>
+</div>
 
 <div class="float-left consonants">
 <table>
@@ -111,42 +106,38 @@
 <button type="button" style="left: 170px; top: 45px;" value="Mid back rounded vowel">ɔ</button>
 <button type="button" style="left: 145px; top: 0px;" value="Close back rounded vowel">u</button>
 <button type="button" style="left: 110px; top: 65px;" value="Mid central unrounded vowel">ɜ</button>
-<button type="button" style="left: 125px; top: 65px;" value="Mid central vowel">ə</button>
+<button type="button" style="left: 135px; top: 65px;" value="Mid central vowel">ə</button>
     </span>
 <span class="group genam">
-<button type="button" class="hidden" style="left: 20px; top: 0px;" value="Close front unrounded vowel">i</button>
-<button type="button" class="hidden" style="left: 40px; top: 20px;" value="Close-mid front-centralized unrounded vowel">ɪ</button>
-<button type="button" class="hidden" style="left: 45px; top: 55px;" value="Mid front unrounded vowel">e</button>
-<button type="button" class="hidden" style="left: 70px; top: 100px;" value="Open front unrounded vowel">æ</button>
-<button type="button" class="hidden" style="left: 120px; top: 90px;" value="Open-mid central unrounded vowel">ʌ</button>
-<button type="button" class="hidden" style="left: 115px; top: 115px;" value="Open central unrounded vowel">a</button>
-<button type="button" class="hidden" style="left: 150px; top: 115px;" value="Open back-centralized unrounded vowel">ɑ</button>
-<button type="button" class="hidden" style="left: 150px; top: 60px;" value="Close-mid back rounded vowel">o</button>
-<button type="button" class="hidden" style="left: 140px; top: 25px;" value="Close-mid back-centralized rounded vowel">ʊ</button>
-<button type="button" class="hidden" style="left: 165px; top: 65px;" value="Mid back rounded vowel">ɔ</button>
-<button type="button" class="hidden" style="left: 150px; top: 5px;" value="Close back rounded vowel">u</button>
-<button type="button" class="hidden" style="left: 115px; top: 65px;" value="Mid central vowel">ə</button>
-<button type="button" class="hidden" style="left: 15px; top: 120px;" value="Mid central vowel with rhoticity">ɚ</button>
-<button type="button" class="hidden" style="left: 30px; top: 120px;" value="Mid central unrounded vowel with rhoticity">ɝ</button>
+<button type="button" style="left: 20px; top: 0px;" value="Close front unrounded vowel">i</button>
+<button type="button" style="left: 40px; top: 20px;" value="Close-mid front-centralized unrounded vowel">ɪ</button>
+<button type="button" style="left: 45px; top: 55px;" value="Mid front unrounded vowel">e</button>
+<button type="button" style="left: 70px; top: 100px;" value="Open front unrounded vowel">æ</button>
+<button type="button" style="left: 120px; top: 90px;" value="Open-mid central unrounded vowel">ʌ</button>
+<button type="button" style="left: 115px; top: 115px;" value="Open central unrounded vowel">a</button>
+<button type="button" style="left: 150px; top: 115px;" value="Open back-centralized unrounded vowel">ɑ</button>
+<button type="button" style="left: 150px; top: 60px;" value="Close-mid back rounded vowel">o</button>
+<button type="button" style="left: 140px; top: 25px;" value="Close-mid back-centralized rounded vowel">ʊ</button>
+<button type="button" style="left: 165px; top: 65px;" value="Mid back rounded vowel">ɔ</button>
+<button type="button" style="left: 150px; top: 5px;" value="Close back rounded vowel">u</button>
+<button type="button" style="left: 115px; top: 65px;" value="Mid central vowel">ə</button>
+<button type="button" style="left: 15px; top: 120px;" value="Mid central vowel with rhoticity">ɚ</button>
+<button type="button" style="left: 30px; top: 120px;" value="Mid central unrounded vowel with rhoticity">ɝ</button>
     </span>
 </div>
 <div class="float-left diacritics">
+	<span class="group">
 <button type="button" value="Long">ː</button>
+<button type="button" value="Optional schwa">ᵊ</button>
 <button type="button" value="Primary stress">ˈ</button>
 <button type="button" value="Secondary stress">ˌ</button>
 <button type="button" value="Slant bracket">/</button>
+    </span>
+</div>
+<div class="preview">
+<div class="symbol">&nbsp;
+</div>
+<div class="description">&nbsp;
 </div>
 </div>
-  <div class="prompt">
-  face
-  </div>
-  <div class="answer">
-    <input type="text" autocomplete="off" readonly="true" class="insertHere" placeholder="Write your transcription here"/>
-  	<div id="backspace"><img src="delete.png"/></div>
-  </div>
 </div>
-<div id="check">check </div>
-    <div class="feedback">
-    your transcription is correct
-    </div>
-</body>
