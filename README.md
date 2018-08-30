@@ -1,10 +1,11 @@
-The ipatranscription question type has been developed on the basis of existing Moodle question types. 
+# MoodlePlugin
+The Transcription question type has been developed on the basis of existing Moodle question types. 
 
 We are not authors of Moodle or any default modules of it.
 
 Please acknowledge our work.
 
-The ipatranscription question type and some sample activities created by:
+The Transcription question type and some sample activities created by:
 Aperlinski, Grzegorz (gaperlinski@wa.amu.edu.pl)
 
 Sample activities, testing and valuable comments by:
